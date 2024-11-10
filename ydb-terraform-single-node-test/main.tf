@@ -16,7 +16,7 @@ provider "yandex" {
 
 #=========== Instance =============#
 
-resource "yandex_compute_instance" "tpcc-runners" {
+resource "yandex_compute_instance" "nodes" {
   count = var.instance_count
   name  = "${var.instance_name}-${1 + count.index}"
   hostname = "${var.instance_hostname}-${1 + count.index}"
