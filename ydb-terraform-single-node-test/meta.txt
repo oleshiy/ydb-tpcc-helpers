@@ -1,0 +1,8 @@
+#cloud-config
+users:
+  - name: olegbondar
+    groups: sudo
+    shell: /bin/bash
+    sudo: 'ALL=(ALL) NOPASSWD:ALL'
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCz1Ftm/qKVUeJBYATv6phz/b8VsvFOY6MCiLPPxib31WZhk9Trh/8X3HWgxrf+BHt0HslV7SjxRBLN+YQRlEjfULVU40bIcF3E2BvbvyeUw5e1mgUh48ufpy9wskCwR18dleScIyyigoO0aI7Rgzxy610Orp/T6K2nHrPQpeGccsl/hPhAXByP/wXyDhBx+ndNjbcf1LZo5PJXXC5Xh2EzhbjBA1QXI8NgQ3cnx2u0ZJDjsaXIDrEUb0QF6FLeA7J7GvA4zftHpWQCbiU7ph3F9D2LYlWa7Buuch7Y60ukylwt0RYJ+I24koRnvyaNMvuwc4Vas4Xc2H8YV1khIuHzxEWmFz+aO5MQVP2/slzYJaQwWdiA2Sd1iFBKNhjfPWWZoN//q+ZoBrYNHV3iIhGPPRnJkkV5Pj4MUx3TSiCXU5GFXvAMYnv50iFQIEGZX1nbvCIEpxeJbr/AXswsOY4Y0Gl4O//BrHGJUYdw2z35HHhKy0+n3NRb72QHt+gdaSk= olegbondar@olegbondar-os

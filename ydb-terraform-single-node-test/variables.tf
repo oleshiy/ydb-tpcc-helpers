@@ -92,6 +92,12 @@ variable "ssh_key_pub_path" {
     default = "~/.ssh/id_ed25519.pub"
 }
 
+variable "users_meta" {
+    type = string
+    description = "Path to the file with users meta"
+    default = "meta.txt"
+}
+
 #========== Instance boot disk =======#
 
 variable "instance_boot_disk_size" {

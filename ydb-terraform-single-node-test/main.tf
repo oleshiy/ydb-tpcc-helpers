@@ -42,7 +42,7 @@ resource "yandex_compute_instance" "nodes" {
   }
 
   metadata = {
-    ssh-keys = "${var.user}:${file(var.ssh_key_pub_path)}"
+    user-data = "${file("${var.users_meta}")}"
   }
 
 }
